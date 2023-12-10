@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                    sans-serif;
+            }
+            #header,
+            #footer {
+                height: 10vh;
+                width: 100%;
+            }
+            #header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                background-color: rgb(79, 174, 243);
+                border-bottom: 2px solid red;
+                padding: 0.5em 1em;
+            }
+            #logo span {
+                color: white;
+            }
+            #controls button {
+                font-size: 1.25rem;
+                background-color: transparent;
+                border: none;
+                padding: 0.5em 1em;
+            }
+            #main {
+                height: 80vh;
+                padding: 1em 0;
+            }
+            form {
+                position: relative;
+                height: 100%;
+                width: 33.33%;
+                background-color: transparent;
+                margin: 0 auto;
+                border: 2px solid gray;
+            }
+            form h2 {
+                height: 10%;
+                text-align: center;
+                line-height: 2em;
+                background-color: rgb(79, 174, 243);
+                border-bottom: 2px solid gray;
+            }
+            form input[type='submit'] {
+                margin-left: auto;
+                margin-right: 1em;
+                font-size: 1.3rem;
+                width: 33%;
+                height: 50px;
+            }
+            .fields {
+                display: grid;
+                grid-template-rows: repeat(auto, 1fr);
+            }
+            .field {
+                display: flex;
+                flex: 1 auto;
+                flex-direction: column;
+                padding: 0.5em 1em;
+            }
+            .field input,
+            select {
+                height: 32px;
+                border-radius: 4px;
+                border: 1px solid gray;
+            }
+            label {
+                margin-bottom: 6px;
+            }
+            #footer {
+                padding-top: 5vh;
+                background-color: rgb(50, 50, 50);
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h2>Мій особистий блог</h2>
+                <span>Владислав Омельченко</span>
+            </div>
+            <div id="controls">
+                <button id="enter">Вхід</button>
+                <button id="registr">Реєстрація</button>
+            </div>
+        </div>
+        <div id="main">
+            <form>
+                <h2>Реєстрація користувача</h2>
+                <div class="fields">
+                    <div class="field">
+                        <label for="lastName">Прізвище</label>
+                        <input type="text" name="lastName" id="lastName" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="footer">
+            <p><span>&#9400;</span>Всі права захищені</p>
+        </div>
+    </body>
+</html>
