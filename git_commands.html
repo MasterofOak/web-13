@@ -23,8 +23,8 @@
         </div>
         <div id="main">
             <div id="groups">
-                <div class="cmd-group">
-                    <h2>Create a Repository</h2>
+                <div id="group-1" class="cmd-group">
+                    <h2 style="color: rgb(91, 91, 217)">Create a Repository</h2>
                     <div class="sub-group">
                         <div class="description">
                             From scratch -- Create a new local repository:
@@ -38,8 +38,10 @@
                         <div class="cmd">$ git clone my_url</div>
                     </div>
                 </div>
-                <div class="cmd-group">
-                    <h2>Observe your Repository</h2>
+                <div id="group-2" class="cmd-group">
+                    <h2 style="color: rgb(71, 71, 162)">
+                        Observe your Repository
+                    </h2>
                     <div class="sub-group">
                         <div class="description">
                             List new or modified files not yet commited
@@ -93,8 +95,10 @@
                         <div class="cmd">$ git log -p [file/dir]</div>
                     </div>
                 </div>
-                <div class="cmd-group">
-                    <h2>Working with branches</h2>
+                <div id="group-3" class="cmd-group">
+                    <h2 style="color: rgb(11, 185, 37)">
+                        Working with branches
+                    </h2>
                     <div class="sub-group">
                         <div class="description">List all branches</div>
                         <div class="cmd">$ git branch</div>
@@ -129,8 +133,8 @@
                         <div class="cmd">$ git tag my_tag</div>
                     </div>
                 </div>
-                <div class="cmd-group">
-                    <h2>Make a change</h2>
+                <div id="group-4" class="cmd-group">
+                    <h2 style="color: rgb(115, 241, 47)">Make a change</h2>
                     <div class="sub-group">
                         <div class="description">Stage a file for commit</div>
                         <div class="cmd">$ git add [file]</div>
@@ -159,41 +163,39 @@
                         </div>
                         <div class="cmd">$ git reset --hard</div>
                     </div>
-                    <div class="cmd-group">
-                        <h2>Syncronize</h2>
-                        <div class="sub-group">
-                            <div class="description">
-                                Get latest changes from origin
-                            </div>
-                            <div class="cmd">$ git fetch</div>
+                </div>
+                <div id="group-5" class="cmd-group">
+                    <h2 style="color: rgb(151, 65, 65)">Syncronize</h2>
+                    <div class="sub-group">
+                        <div class="description">
+                            Get latest changes from origin
                         </div>
-                        <div class="sub-group">
-                            <div class="description">
-                                Get latest changes from origin and merge
-                            </div>
-                            <div class="cmd">$ git pull</div>
-                        </div>
-                        <div class="sub-group">
-                            <div class="description">
-                                Fetch latest changes from origin and rebase
-                            </div>
-                            <div class="cmd">$ git pull --rebase</div>
-                        </div>
-                        <div class="sub-group">
-                            <div class="description">
-                                Push changes to origin
-                            </div>
-                            <div class="cmd">$ git push</div>
-                        </div>
+                        <div class="cmd">$ git fetch</div>
                     </div>
-                    <div class="cmd-group">
-                        <h2>Finally</h2>
-                        <div class="sub-group">
-                            <div class="description">
-                                When in doubt use git help
-                            </div>
-                            <div class="cmd">$ git command --help</div>
+                    <div class="sub-group">
+                        <div class="description">
+                            Get latest changes from origin and merge
                         </div>
+                        <div class="cmd">$ git pull</div>
+                    </div>
+                    <div class="sub-group">
+                        <div class="description">
+                            Fetch latest changes from origin and rebase
+                        </div>
+                        <div class="cmd">$ git pull --rebase</div>
+                    </div>
+                    <div class="sub-group">
+                        <div class="description">Push changes to origin</div>
+                        <div class="cmd">$ git push</div>
+                    </div>
+                </div>
+                <div id="group-6" class="cmd-group">
+                    <h2 style="color: rgb(175, 53, 42)">Finally</h2>
+                    <div class="sub-group">
+                        <div class="description">
+                            When in doubt use git help
+                        </div>
+                        <div class="cmd">$ git command --help</div>
                     </div>
                 </div>
             </div>
